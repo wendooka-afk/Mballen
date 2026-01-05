@@ -1,0 +1,8 @@
+{
+  "name": "Mballen Redesign - Eco-System",
+  "description": "A high-end, modern redesign of the Mballen platform based on the Earth Renew visual identity, focusing on sustainability and impact.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
