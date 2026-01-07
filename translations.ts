@@ -7,47 +7,77 @@ export const translations: Record<Language, TranslationSchema> = {
       home: 'Accueil',
       about: 'À propos',
       actions: 'Nos actions',
+      projects: 'Nos projets',
+      partners: 'Partenariats',
       impact: 'Impact',
       contact: 'Contact',
       cta: 'Faire un don',
     },
     hero: {
-      title: 'Bâtir un avenir de dignité et d’autonomie pour les plus vulnérables',
-      subtitle: 'MBALLEN — « Aidons » en fulfuldé — place la solidarité active et l’écoute au cœur du développement humain durable au Cameroun.',
-      ctaDon: 'Soutenir',
+      badge: 'ONG MBALLEN',
+      title: 'Aidons aujourd\'hui pour bâtir des communautés dignes et résilientes',
+      subtitle: 'MBALLEN, qui signifie « Aidons » en fulfuldé, est une ONG camerounaise engagée pour la protection des personnes vulnérables, l\'autonomisation économique, la préservation de l\'environnement et le développement communautaire durable.',
+      tagline: '👉 Ensemble, transformons la solidarité en actions concrètes.',
+      ctaDon: '🤲 Faire un don',
+      ctaPartner: '🤝 Devenir partenaire',
+      ctaContact: '📩 Nous contacter',
       ctaActions: 'Nos missions',
     },
     mission: {
-      badge: 'Notre mission',
-      title: 'Intervenir là où l’urgence rejoint le besoin',
-      desc: 'Nous travaillons à transformer durablement la vie des populations marginalisées en apportant des solutions concrètes et un accompagnement de proximité.',
+      badge: 'Notre mission en bref',
+      title: 'Une ONG au service de la dignité humaine',
+      desc: 'L\'ONG MBALLEN œuvre pour un développement humain inclusif, en accompagnant les populations défavorisées : femmes, enfants, orphelins, personnes âgées, réfugiés, déplacés internes et personnes handicapées.',
       targets: [
         'Femmes en situation de précarité',
-        'Enfants et jeunes vulnérables',
-        'Personnes âgées et personnes en situation de handicap',
-        'Communautés rurales isolées'
+        'Enfants et orphelins',
+        'Personnes âgées et handicapées',
+        'Réfugiés et déplacés internes'
       ],
-      approach: 'Au‑delà de l’aide, nous visons l’autonomie et la résilience durable.',
+      approach: 'Nos actions visent à répondre aux besoins essentiels tout en renforçant l\'autonomie et la résilience des communautés.',
     },
     about: {
-      title: 'Une force solidaire ancrée sur le terrain',
-      identityTitle: 'Qui sommes‑nous ?',
-      identityDesc: 'Fondée par Oumarou Sanda Aboubakar, MBALLEN est une ONG dédiée à l’entraide et à l’innovation sociale. Reconnaissance officielle et ancrage local nous permettent d’agir pour restaurer l’espoir et la dignité des populations les plus vulnérables.',
+      title: 'À propos de Mballen',
+      identityTitle: 'Qui sommes-nous ?',
+      identityDesc: 'L\'ONG MBALLEN est une organisation non gouvernementale à caractère unipersonnel, fondée par M. Oumarou Sanda Aboubakar, et officiellement agréée par l\'État camerounais par arrêté ministériel du 22 novembre 2024.\n\nBasée à N\'Gaoundéré, dans la région de l\'Adamaoua, l\'ONG intervient sur l\'ensemble du territoire camerounais selon les besoins et les partenariats.',
       visionTitle: 'Notre vision',
-      visionDesc: 'Un monde solidaire où chacun dispose des ressources et de l’autonomie nécessaires pour piloter son propre développement.',
+      visionDesc: 'Contribuer à l\'émergence de communautés solidaires, autonomes et résilientes, où chaque individu vit dans la dignité et participe pleinement au développement.',
+      missionTitle: 'Notre mission',
+      missionDesc: 'Promouvoir un développement humain durable et inclusif en œuvrant prioritairement auprès des populations vulnérables à travers des actions sociales, économiques, environnementales et communautaires.',
       valuesTitle: 'Nos valeurs',
-      values: ['Solidarité active', 'Intégrité', 'Inclusion sociale', 'Dignité humaine', 'Engagement local']
+      values: [
+        'Solidarité : agir ensemble pour le bien commun',
+        'Intégrité : transparence et responsabilité',
+        'Inclusion : personne ne doit être laissé de côté',
+        'Respect de la dignité humaine',
+        'Engagement communautaire'
+      ],
+      mottoTitle: 'Devise',
+      motto: 'Solidarité – Paix – Développement'
     },
     actionsPage: {
-      title: 'Un impact concret par des actions ciblées',
-      intro: 'Nos programmes répondent aux défis majeurs de nos communautés, de l’inclusion sociale à l’autonomie économique.',
+      title: 'Nos actions au service des communautés',
+      intro: 'L\'ONG MBALLEN agit de manière concrète et durable à travers plusieurs axes complémentaires.',
       items: [
-        { title: '1. Protection et inclusion sociale', desc: 'Accompagner les femmes marginalisées, les jeunes et les personnes en situation de handicap vers une intégration pleine et digne.' },
-        { title: '2. Assistance et services de base', desc: 'Assurer l’accès aux besoins fondamentaux : eau potable, santé primaire, logement décent et éducation.' },
-        { title: '3. Autonomisation économique', desc: 'Soutenir l’entrepreneuriat local et l’agriculture via le micro‑financement et la formation pour générer des revenus durables.' },
-        { title: '4. Infrastructures communautaires', desc: 'Réhabiliter et construire des centres de santé et des écoles pour renforcer le développement local.' },
-        { title: '5. Résilience environnementale', desc: 'Promouvoir des pratiques durables et lutter contre la dégradation climatique pour préserver les ressources.' },
-        { title: '6. Coopération et partenariats', desc: 'Bâtir des alliances stratégiques pour mutualiser les compétences et amplifier l’impact.' }
+        {
+          title: '1. Protection et inclusion des personnes vulnérables',
+          desc: 'Nous luttons contre la marginalisation et promouvons l\'égalité des droits pour :',
+          subItems: ['Femmes et jeunes filles', 'Enfants et orphelins', 'Personnes âgées', 'Personnes handicapées', 'Réfugiés et déplacés internes']
+        },
+        {
+          title: '2. Assistance humanitaire et sociale',
+          desc: 'Nous apportons une aide directe pour :',
+          subItems: ['Le logement', 'La santé communautaire', 'L\'éducation de base', 'L\'accès à l\'eau potable']
+        },
+        {
+          title: '3. Eau, hygiène et assainissement',
+          desc: '',
+          subItems: ['Construction et réhabilitation de forages', 'Mise en place de comités de gestion de l\'eau', 'Construction de latrines', 'Sensibilisation à l\'hygiène sanitaire']
+        },
+        {
+          title: '4. Protection de l\'environnement',
+          desc: '',
+          subItems: ['Sensibilisation à la pollution et au changement climatique', 'Promotion du reboisement', 'Lutte contre la déforestation', 'Protection des ressources naturelles']
+        }
       ]
     },
     impactPage: {
@@ -65,25 +95,58 @@ export const translations: Record<Language, TranslationSchema> = {
       donationOptions: ['Don ponctuel', 'Don régulier (mensuel)', 'Parrainage de projet'],
       paymentMethods: 'Paiements sécurisés : Mobile Money (Orange/MTN), carte bancaire, virement.'
     },
+    projectsPage: {
+      title: 'Nos projets pour un impact durable',
+      intro: 'Chaque projet de l\'ONG MBALLEN est conçu pour répondre à un besoin réel et produire des résultats durables.',
+      categories: [
+        {
+          title: '🔹 Projets sociaux',
+          items: ['Soutien aux orphelinats', 'Aide aux personnes vulnérables', 'Programmes de santé communautaire']
+        },
+        {
+          title: '🔹 Projets économiques',
+          items: ['Financement de petits projets agricoles', 'Soutien à l\'élevage', 'Appui aux petits métiers', 'Formation en gestion et entrepreneuriat']
+        },
+        {
+          title: '🔹 Projets d\'infrastructures',
+          items: ['Construction et réhabilitation de salles de classe', 'Réhabilitation de centres de santé', 'Équipement d\'infrastructures communautaires']
+        },
+        {
+          title: '🔹 Projets environnementaux',
+          items: ['Campagnes de sensibilisation', 'Reboisement communautaire', 'Gestion durable des ressources naturelles']
+        }
+      ],
+      cta: '👉 Vous pouvez soutenir ou cofinancer un projet.'
+    },
+    partnersPage: {
+      title: 'Construire ensemble pour aller plus loin',
+      intro: 'L’ONG MBALLEN croit fermement à la force des partenariats pour amplifier l’impact social et environnemental.',
+      whyTitle: 'Pourquoi devenir partenaire ?',
+      whyItems: [
+        'Mutualiser les ressources et expertises',
+        'Développer des projets à fort impact',
+        'Intervenir durablement auprès des communautés',
+        'Agir au niveau local, national et international'
+      ],
+      potentialTitle: 'Nos partenaires potentiels',
+      potentialItems: [
+        'ONG et associations',
+        'Institutions publiques',
+        'Organisations internationales',
+        'Entreprises et fondations'
+      ],
+      cta: '👉 Contactez-nous pour bâtir un partenariat durable.'
+    },
     contactPage: {
-      title: 'Restons connectés pour agir ensemble',
-      subtitle: 'Une question ? Un partenariat ? Notre équipe vous répond.',
-      addressLabel: 'Siège',
-      addressValue: 'N’Gaoundéré, département de la Vina, région de l’Adamaoua, Cameroun',
-      emailLabel: 'E‑mail',
-      emailValue: 'contact@mballen.cm',
-      phoneLabel: 'Téléphone',
-      phoneValue: '+237 6XX XXX XXX',
-      socialTitle: 'Suivez‑nous',
-      socialDesc: 'Retrouvez nos campagnes en images et nos opportunités de bénévolat sur les réseaux sociaux.',
-      whyTitle: 'Pourquoi soutenir MBALLEN ?',
-      whySubtitle: 'Votre impact en direct',
-      reasons: [
-        'Redonner espoir aux plus démunis',
-        'Soutenir une autonomisation réelle et durable',
-        'Bâtir des communautés plus résilientes',
-        'Faire vivre la solidarité concrète'
-      ]
+      title: 'Contactez l’ONG MBALLEN',
+      subtitle: 'Vous souhaitez soutenir nos actions, devenir partenaire ou en savoir plus ?\nNous serons heureux d’échanger avec vous.',
+      addressLabel: '📍 Siège social',
+      addressValue: 'N’Gaoundéré, Région de l’Adamaoua – Cameroun',
+      emailLabel: '📧 Email',
+      emailValue: '(adresse professionnelle à créer)',
+      phoneLabel: '📞 Téléphone',
+      phoneValues: ['+237 696 68 40 41', '+237 673 01 65 85'],
+      tagline: 'Aidons aujourd’hui. Construisons demain.'
     },
     joinUsPage: {
       title: 'Rejoignez l’aventure MBALLEN',
@@ -117,16 +180,33 @@ export const translations: Record<Language, TranslationSchema> = {
       ]
     },
     domains: {
-      title: 'Nos domaines d’intervention',
-      subtitle: 'Une approche globale pour un développement humain durable.',
+      title: 'Nos principaux domaines d\'action',
+      subtitle: '',
+      cta: '👉 Découvrir toutes nos actions',
       items: [
-        { title: 'Inclusion sociale', desc: 'Lutter contre l’exclusion et la stigmatisation des personnes vulnérables.' },
-        { title: 'Aide humanitaire', desc: 'Intervenir rapidement pour fournir vivres et soins essentiels.' },
-        { title: 'Éducation', desc: 'Faciliter l’accès au savoir et à la formation professionnelle.' },
-        { title: 'Entrepreneuriat', desc: 'Soutenir l’économie locale par l’appui aux micro‑projets.' },
-        { title: 'Infrastructures', desc: 'Améliorer le cadre de vie par des constructions communautaires.' },
-        { title: 'Environnement', desc: 'Préserver l’écosystème pour les générations futures.' }
+        { title: '🤝 Protection et inclusion sociale', desc: 'Accompagner les personnes vulnérables vers une vie digne.' },
+        { title: '🚑 Assistance humanitaire et sociale', desc: 'Intervenir rapidement pour fournir aide et soins essentiels.' },
+        { title: '💧 Eau potable, hygiène et assainissement', desc: 'Garantir l\'accès à l\'eau propre et aux conditions sanitaires.' },
+        { title: '🌱 Environnement et lutte contre le changement climatique', desc: 'Préserver l\'écosystème pour les générations futures.' },
+        { title: '🛠️ Infrastructures communautaires', desc: 'Améliorer le cadre de vie par des constructions communautaires.' },
+        { title: '💼 Autonomisation économique', desc: 'Soutenir l\'économie locale et l\'entrepreneuriat.' }
       ]
+    },
+    fieldActions: {
+      title: 'Nos actions sur le terrain',
+      items: [
+        'Séminaires de sensibilisation à la protection de l\'environnement',
+        'Actions en faveur des personnes handicapées',
+        'Distribution de dons aux orphelinats',
+        'Projets communautaires en zones vulnérables'
+      ],
+      conclusion: 'Chaque action est menée avec les communautés, pour un impact durable.'
+    },
+    callToAction: {
+      title: 'Appel à l\'engagement',
+      heading: 'Vous pouvez changer des vies avec nous',
+      desc: 'Votre soutien permet d\'apporter des solutions concrètes là où les besoins sont les plus urgents.',
+      links: ['👉 Faire un don', '👉 Devenir partenaire', '👉 S\'engager']
     },
     don: {
       title: 'Participez au changement',
@@ -140,6 +220,13 @@ export const translations: Record<Language, TranslationSchema> = {
       cta: 'Faire un don'
     },
     footer: {
+      description: "Restaurer la dignité pour un avenir plein d'espoir. Ensemble, cultivons la solidarité.",
+      navigation: "Navigation",
+      privacy: "Confidentialité",
+      contact: "Contact",
+      address: "Yaoundé, Cameroun",
+      emailPlaceholder: "Votre email",
+      emailLabel: "Votre adresse e-mail",
       newsletter: 'Newsletter',
       newsletterDesc: 'Inscrivez‑vous pour recevoir les comptes rendus de nos actions.',
       subscribe: 'S’abonner',
@@ -157,13 +244,19 @@ export const translations: Record<Language, TranslationSchema> = {
       about: 'Our Identity',
       actions: 'Our Actions',
       impact: 'Our Impact',
+      projects: 'Our Projects',
+      partners: 'Partnerships',
       contact: 'Contact',
       cta: 'Donate Now',
     },
     hero: {
-      title: 'Building a future of dignity and self-reliance for the most vulnerable',
-      subtitle: 'MBALLEN NGO — meaning "Let’s Help" in Fulfulde — places active solidarity and empathy at the heart of sustainable human development in Cameroon.',
-      ctaDon: 'Support Our Cause',
+      badge: 'MBALLEN NGO',
+      title: 'Let\'s help today to build dignified and resilient communities',
+      subtitle: 'MBALLEN, meaning "Let\'s Help" in Fulfulde, is a Cameroonian NGO committed to protecting vulnerable people, economic empowerment, environmental preservation, and sustainable community development.',
+      tagline: '👉 Together, let\'s turn solidarity into concrete actions.',
+      ctaDon: '🤲 Make a donation',
+      ctaPartner: '🤝 Become a partner',
+      ctaContact: '📩 Contact us',
       ctaActions: 'Explore Our Missions',
     },
     mission: {
@@ -222,17 +315,49 @@ export const translations: Record<Language, TranslationSchema> = {
       emailLabel: 'E-mail',
       emailValue: 'contact@mballen.cm',
       phoneLabel: 'Phone',
-      phoneValue: '+237 6XX XXX XXX',
-      socialTitle: 'Follow Us',
-      socialDesc: 'Join our community on social media to see our campaigns in action and find volunteering opportunities.',
-      whyTitle: 'Why support MBALLEN?',
-      whySubtitle: 'Your direct impact',
-      reasons: [
-        'Restoring hope to the most destitute.',
-        'Supporting real and sustainable empowerment.',
-        'Building stronger and more resilient communities.',
-        'Making concrete human solidarity a reality.'
-      ]
+      phoneValues: ['+237 696 68 40 41', '+237 673 01 65 85'],
+    },
+    projectsPage: {
+      title: 'Our projects for sustainable impact',
+      intro: 'Each MBALLEN NGO project is designed to address a real need and produce lasting results.',
+      categories: [
+        {
+          title: '🔹 Social Projects',
+          items: ['Support for orphanages', 'Aid for vulnerable people', 'Community health programs']
+        },
+        {
+          title: '🔹 Economic Projects',
+          items: ['Funding for small agricultural projects', 'Support for livestock farming', 'Support for small trades', 'Training in management and entrepreneurship']
+        },
+        {
+          title: '🔹 Infrastructure Projects',
+          items: ['Construction and rehabilitation of classrooms', 'Rehabilitation of health centers', 'Equipping community infrastructures']
+        },
+        {
+          title: '🔹 Environmental Projects',
+          items: ['Awareness campaigns', 'Community reforestation', 'Sustainable management of natural resources']
+        }
+      ],
+      cta: '👉 You can support or co-finance a project.'
+    },
+    partnersPage: {
+      title: 'Building together to go further',
+      intro: 'MBALLEN NGO firmly believes in the power of partnerships to amplify social and environmental impact.',
+      whyTitle: 'Why become a partner?',
+      whyItems: [
+        'Pool resources and expertise',
+        'Develop high-impact projects',
+        'Intervene sustainably in communities',
+        'Act at local, national, and international levels'
+      ],
+      potentialTitle: 'Our potential partners',
+      potentialItems: [
+        'NGOs and associations',
+        'Public institutions',
+        'International organizations',
+        'Companies and foundations'
+      ],
+      cta: '👉 Contact us to build a lasting partnership.'
     },
     joinUsPage: {
       title: 'Join the MBALLEN Adventure',
@@ -266,16 +391,33 @@ export const translations: Record<Language, TranslationSchema> = {
       ]
     },
     domains: {
-      title: 'Our Areas of Focus',
-      subtitle: 'A holistic approach to complete human development.',
+      title: 'Our Main Areas of Action',
+      subtitle: '',
+      cta: '👉 Discover all our actions',
       items: [
-        { title: 'Social Inclusion', desc: 'Fighting exclusion and the stigmatization of vulnerable people.' },
-        { title: 'Humanitarian Aid', desc: 'Emergency intervention to provide food and essential care.' },
-        { title: 'Education', desc: 'Facilitating access to knowledge and vocational training.' },
-        { title: 'Entrepreneurship', desc: 'Boosting the local economy by supporting micro-projects.' },
-        { title: 'Infrastructure', desc: 'Improving the living environment through community construction.' },
-        { title: 'Environment', desc: 'Preserving the ecosystem for future generations.' }
+        { title: '🤝 Protection and social inclusion', desc: 'Supporting vulnerable people towards a dignified life.' },
+        { title: '🚑 Humanitarian and social assistance', desc: 'Rapid intervention to provide aid and essential care.' },
+        { title: '💧 Clean water, hygiene and sanitation', desc: 'Ensuring access to clean water and sanitary conditions.' },
+        { title: '🌱 Environment and climate change', desc: 'Preserving the ecosystem for future generations.' },
+        { title: '🛠️ Community infrastructure', desc: 'Improving living conditions through community construction.' },
+        { title: '💼 Economic empowerment', desc: 'Supporting local economy and entrepreneurship.' }
       ]
+    },
+    fieldActions: {
+      title: 'Our Actions in the Field',
+      items: [
+        'Environmental protection awareness seminars',
+        'Actions for people with disabilities',
+        'Donation distribution to orphanages',
+        'Community projects in vulnerable areas'
+      ],
+      conclusion: 'Every action is carried out with the communities, for lasting impact.'
+    },
+    callToAction: {
+      title: 'Call to Action',
+      heading: 'You can change lives with us',
+      desc: 'Your support enables concrete solutions where needs are most urgent.',
+      links: ['👉 Make a donation', '👉 Become a partner', '👉 Get involved']
     },
     don: {
       title: 'Be part of the change',
@@ -289,6 +431,13 @@ export const translations: Record<Language, TranslationSchema> = {
       cta: 'Donate Now'
     },
     footer: {
+      description: "Restoring dignity for a future full of hope. Together, let's cultivate solidarity.",
+      navigation: "Navigation",
+      privacy: "Privacy",
+      contact: "Contact",
+      address: "Yaoundé, Cameroon",
+      emailPlaceholder: "Your email",
+      emailLabel: "Your email address",
       newsletter: 'Newsletter',
       newsletterDesc: 'Subscribe to receive updates on our field actions.',
       subscribe: 'Subscribe',
@@ -306,13 +455,19 @@ export const translations: Record<Language, TranslationSchema> = {
       about: 'Kimliğimiz',
       actions: 'Faaliyetlerimiz',
       impact: 'Etkimiz',
+      projects: 'Projelerimiz',
+      partners: 'Ortaklıklar',
       contact: 'İletişim',
       cta: 'Bağış Yap',
     },
     hero: {
-      title: 'En savunmasızlar için onurlu ve özerk bir gelecek inşa ediyoruz',
-      subtitle: 'MBALLEN STK — Fulfulde dilinde "Yardım Edelim" — Kamerun\'da sürdürülebilir insani gelişimin merkezine aktif dayanışmayı koyar.',
-      ctaDon: 'Davaya Destek Ol',
+      badge: 'MBALLEN STK',
+      title: 'Onurlu ve dirençli topluluklar inşa etmek için bugün yardım edelim',
+      subtitle: 'MBALLEN, Fulfulde dilinde "Yardım Edelim" anlamına gelen, savunmasız kişilerin korunması, ekonomik güçlendirme, çevrenin korunması ve sürdürülebilir topluluk kalkınmasına kendini adamış bir Kamerun STK\'sıdır.',
+      tagline: '👉 Birlikte, dayanışmayı somut eylemlere dönüştürelim.',
+      ctaDon: '🤲 Bağış Yap',
+      ctaPartner: '🤝 Ortak Ol',
+      ctaContact: '📩 Bize Ulaşın',
       ctaActions: 'Misyonlarımızı Keşfedin',
     },
     mission: {
@@ -371,17 +526,49 @@ export const translations: Record<Language, TranslationSchema> = {
       emailLabel: 'E-posta',
       emailValue: 'contact@mballen.cm',
       phoneLabel: 'Telefon',
-      phoneValue: '+237 6XX XXX XXX',
-      socialTitle: 'Bizi Takip Edin',
-      socialDesc: 'Kampanyalarımızı eylem halindeyken görmek ve gönüllülük fırsatlarını bulmak için sosyal medyada topluluğumuza katılın.',
-      whyTitle: 'Neden MBALLEN\'i desteklemelisiniz?',
-      whySubtitle: 'Doğrudan etkiniz',
-      reasons: [
-        'En yoksul olanlara umudu geri vermek.',
-        'Gerçek ve sürdürülebilir özerkleşmeyi desteklemek.',
-        'Daha güçlü ve dirençli topluluklar inşa etmek.',
-        'Somut insani dayanışmayı gerçeğe dönüştürmek.'
-      ]
+      phoneValues: ['+237 696 68 40 41', '+237 673 01 65 85'],
+    },
+    projectsPage: {
+      title: 'Sürdürülebilir etki için projelerimiz',
+      intro: 'Her MBALLEN STK projesi, gerçek bir ihtiyacı karşılamak ve kalıcı sonuçlar üretmek için tasarlanmıştır.',
+      categories: [
+        {
+          title: '🔹 Sosyal Projeler',
+          items: ['Yetimhanelere destek', 'Savunmasız kişilere yardım', 'Toplum sağlığı programları']
+        },
+        {
+          title: '🔹 Ekonomik Projeler',
+          items: ['Küçük tarım projelerinin finansmanı', 'Hayvancılık desteği', 'Küçük esnaf desteği', 'Yönetim ve girişimcilik eğitimi']
+        },
+        {
+          title: '🔹 Altyapı Projeler',
+          items: ['Sınıfların inşası ve rehabilitasyonu', 'Sağlık merkezlerinin rehabilitasyonu', 'Topluluk altyapılarının donatılması']
+        },
+        {
+          title: '🔹 Çevre Projeler',
+          items: ['Farkındalık kampanyaları', 'Topluluk ağaçlandırması', 'Doğal kaynakların sürdürülebilir yönetimi']
+        }
+      ],
+      cta: '👉 Bir projeyi destekleyebilir veya ortak finanse edebilirsiniz.'
+    },
+    partnersPage: {
+      title: 'Daha ileri gitmek için birlikte inşa etmek',
+      intro: 'MBALLEN STK, sosyal ve çevresel etkiyi artırmak için ortaklıkların gücüne sıkı sıkıya inanmaktadır.',
+      whyTitle: 'Neden ortak olmalısınız?',
+      whyItems: [
+        'Kaynakları ve uzmanlığı birleştirmek',
+        'Yüksek etkili projeler geliştirmek',
+        'Topluluklara sürdürülebilir müdahalede bulunmak',
+        'Yerel, ulusal ve uluslararası düzeyde hareket etmek'
+      ],
+      potentialTitle: 'Potansiyel ortaklarımız',
+      potentialItems: [
+        'STK\'lar ve dernekler',
+        'Kamu kurumları',
+        'Uluslararası kuruluşlar',
+        'Şirketler ve vakıflar'
+      ],
+      cta: '👉 Sürdürülebilir bir ortaklık kurmak için bizimle iletişime geçin.'
     },
     joinUsPage: {
       title: 'MBALLEN Macerasına Katılın',
@@ -415,16 +602,33 @@ export const translations: Record<Language, TranslationSchema> = {
       ]
     },
     domains: {
-      title: 'Eylem Alanlarımız',
-      subtitle: 'Tam insani gelişim için bütünsel bir yaklaşım.',
+      title: 'Temel Faaliyet Alanlarımız',
+      subtitle: '',
+      cta: '👉 Tüm eylemlerimizi keşfedin',
       items: [
-        { title: 'Sosyal Dahiliyet', desc: 'Savunmasız kişilerin dışlanması ve damgalanmasıyla mücadele.' },
-        { title: 'İnsani Yardım', desc: 'Gıda ve temel bakım sağlamak için acil müdahale.' },
-        { title: 'Eğitim', desc: 'Bilgiye ve mesleki eğitime erişimi kolaylaştırmak.' },
-        { title: 'Girişimcilik', desc: 'Mikro projeleri destekleyerek yerel ekonomiyi canlandırmak.' },
-        { title: 'Altyapı', desc: 'Toplum inşaatlarıyla yaşam ortamını iyileştirmek.' },
-        { title: 'Çevre', desc: 'Ekosistemi gelecek nesiller için korumak.' }
+        { title: '🤝 Koruma ve sosyal dahiliyet', desc: 'Savunmasız kişileri onurlu bir yaşama yönlendirmek.' },
+        { title: '🚑 İnsani ve sosyal yardım', desc: 'Yardım ve temel bakım sağlamak için hızlı müdahale.' },
+        { title: '💧 Temiz su, hijyen ve sanitasyon', desc: 'Temiz suya ve sağlık koşullarına erişimi sağlamak.' },
+        { title: '🌱 Çevre ve iklim değişikliği', desc: 'Ekosistemi gelecek nesiller için korumak.' },
+        { title: '🛠️ Toplum altyapısı', desc: 'Toplum inşaatları ile yaşam koşullarını iyileştirmek.' },
+        { title: '💼 Ekonomik güçlendirme', desc: 'Yerel ekonomiyi ve girişimciliği desteklemek.' }
       ]
+    },
+    fieldActions: {
+      title: 'Sahadaki Eylemlerimiz',
+      items: [
+        'Çevre koruma farkındalık seminerleri',
+        'Engelli bireyler için eylemler',
+        'Yetimhanelere bağış dağıtımı',
+        'Savunmasız bölgelerde toplum projeleri'
+      ],
+      conclusion: 'Her eylem, kalıcı etki için topluluklarla birlikte yürütülür.'
+    },
+    callToAction: {
+      title: 'Harekete Geçme Çağrısı',
+      heading: 'Bizimle hayat değiştirebilirsiniz',
+      desc: 'Desteğiniz, ihtiyaçların en acil olduğu yerlerde somut çözümler sağlar.',
+      links: ['👉 Bağış Yap', '👉 Ortak Ol', '👉 Katılın']
     },
     don: {
       title: 'Değişimin bir parçası olun',
@@ -438,6 +642,13 @@ export const translations: Record<Language, TranslationSchema> = {
       cta: 'Şimdi Bağış Yap'
     },
     footer: {
+      description: "Umut dolu bir gelecek için onuru yeniden tesis etmek. Birlikte dayanışmayı yeşertelim.",
+      navigation: "Gezinme",
+      privacy: "Gizlilik",
+      contact: "İletişim",
+      address: "Yaoundé, Kamerun",
+      emailPlaceholder: "E-postanız",
+      emailLabel: "E-posta adresiniz",
       newsletter: 'Bülten',
       newsletterDesc: 'Saha çalışmalarımızdan güncellemeler almak için abone olun.',
       subscribe: 'Abone Ol',
@@ -446,6 +657,218 @@ export const translations: Record<Language, TranslationSchema> = {
         join: 'Bize Katılın',
         press: 'Basın ve Medya',
         reports: 'Raporlar'
+      }
+    }
+  },
+  ar: {
+    nav: {
+      home: 'الرئيسية',
+      about: 'من نحن',
+      actions: 'أعمالنا',
+      projects: 'مشاريعنا',
+      partners: 'شراكات',
+      impact: 'تأثيرنا',
+      contact: 'اتصل بنا',
+      cta: 'تبرع الآن',
+    },
+    hero: {
+      badge: 'منظمة مبالن',
+      title: 'لنساعد اليوم لبناء مجتمعات كريمة ومرنة',
+      subtitle: 'مبالن، وتعني "لنساعد" بلغة الفولفولدي، هي منظمة غير حكومية كاميرونية ملتزمة بحماية الأشخاص المستضعفين، والتمكين الاقتصادي، والحفاظ على البيئة، وتنمية المجتمع المستدامة.',
+      tagline: '👉 معًا، لنحول التضامن إلى إجراءات ملموسة.',
+      ctaDon: '🤲 تبرع',
+      ctaPartner: '🤝 كن شريكًا',
+      ctaContact: '📩 اتصل بنا',
+      ctaActions: 'اكتشف مهامنا',
+    },
+    mission: {
+      badge: 'مهمتنا',
+      title: 'العمل حيث تلتقي الضرورة والحاجة',
+      desc: 'نسعى لتحويل حياة الفئات المهمشة بشكل مستدام من خلال تقديم حلول عملية ودعم مجتمعي قريب.',
+      targets: [
+        'النساء في وضع هشاشة',
+        'الأطفال والشباب المستضعفون',
+        'كبار السن والأشخاص ذوي الإعاقة',
+        'المجتمعات الريفية المعزولة'
+      ],
+      approach: 'أبعد من المساعدة، نهدف للتمكين والمرونة طويلة الأمد.',
+    },
+    about: {
+      title: 'قوة موحدة متجذرة في المجتمعات المحلية',
+      identityTitle: 'من نحن؟',
+      identityDesc: 'أسسها السيد عمر ساندا أبو بكر، وتجسد منظمة مبالن المساعدة المتبادلة والابتكار الاجتماعي. معتمدة من الدولة الكاميرونية، وتعمل بلا كلل لاستعادة الأمل والكرامة الإنسانية بين الفئات الاجتماعية الأكثر حرمانًا.',
+      visionTitle: 'رؤيتنا',
+      visionDesc: 'عالم متضامن يمتلك فيه كل فرد الموارد والاستقلالية ليصبح مهندس تنميته الخاصة.',
+      valuesTitle: 'قيمنا الأساسية',
+      values: ['التضامن النشط', 'النزاهة التامة', 'الشمول الاجتماعي', 'الكرامة الإنسانية', 'التزام محلي']
+    },
+    actionsPage: {
+      title: 'تأثير ملموس من خلال إجراءات هادفة',
+      intro: 'تم تصميم برامجنا لمواجهة التحديات الكبرى لمجتمعاتنا، من الشمول الاجتماعي إلى الاستقلال الاقتصادي.',
+      items: [
+        { title: '1. الحماية والشمول الاجتماعي', desc: 'مرافقة النساء والشباب والأشخاص ذوي الإعاقة المهمشين نحو الاندماج الكامل والكرامة في المجتمع.' },
+        { title: '2. المساعدة والخدمات الأساسية', desc: 'ضمان الوصول إلى الاحتياجات الأساسية: المياه النظيفة، الرعاية الصحية الأولية، السكن اللائق، والتعليم للجميع.' },
+        { title: '3. التمكين الاقتصادي', desc: 'دعم ريادة الأعمال المحلية والزراعة من خلال التمويل الأصغر والتدريب الفني لخلق دخل مستدام.' },
+        { title: '4. البنية التحتية المجتمعية', desc: 'إعادة تأهيل وبناء المراكز الصحية والمدارس لتعزيز أساس التنمية المحلية.' },
+        { title: '5. المرونة البيئية', desc: 'تعزيز الممارسات المستدامة ومكافحة التدهور المناخي لحماية موارد الغد.' },
+        { title: '6. التعاون والشراكات', desc: 'بناء تحالفات استراتيجية لتجميع الخبرات وتضخيم تأثير تدخلاتنا.' }
+      ]
+    },
+    projectsPage: {
+      title: 'مشاريعنا لتأثير مستدام',
+      intro: 'تم تصميم كل مشروع لمنظمة مبالن لتلبية حاجة حقيقية وتحقيق نتائج دائمة.',
+      categories: [
+        {
+          title: '🔹 مشاريع اجتماعية',
+          items: ['دعم دور الأيتام', 'مساعدة الأشخاص المستضعفين', 'برامج الصحة المجتمعية']
+        },
+        {
+          title: '🔹 مشاريع اقتصادية',
+          items: ['تمويل المشاريع الزراعية الصغيرة', 'دعم تربية المواشي', 'دعم الحرف الصغيرة', 'التدريب في الإدارة وريادة الأعمال']
+        },
+        {
+          title: '🔹 مشاريع البنية التحتية',
+          items: ['بناء وإعادة تأهيل الفصول الدراسية', 'إعادة تأهيل المراكز الصحية', 'تجهيز البنى التحتية المجتمعية']
+        },
+        {
+          title: '🔹 مشاريع بيئية',
+          items: ['حملات التوعية', 'التشجير المجتمعي', 'الإدارة المستدامة للموارد الطبيعية']
+        }
+      ],
+      cta: '👉 يمكنك دعم أو المشاركة في تمويل مشروع.'
+    },
+    partnersPage: {
+      title: 'نبني معًا لنذهب أبعد',
+      intro: 'تؤمن منظمة مبالن بقوة الشراكات لتضخيم التأثير الاجتماعي والبيئي.',
+      whyTitle: 'لماذا تصبح شريكًا؟',
+      whyItems: [
+        'تجميع الموارد والخبرات',
+        'تطوير مشاريع ذات تأثير كبير',
+        'التدخل المستدام في المجتمعات',
+        'العمل على المستوى المحلي والوطني والدولي'
+      ],
+      potentialTitle: 'شركاؤنا المحتملون',
+      potentialItems: [
+        'المنظمات غير الحكومية والجمعيات',
+        'المؤسسات العامة',
+        'المنظمات الدولية',
+        'الشركات والمؤسسات'
+      ],
+      cta: '👉 اتصل بنا لبناء شراكة دائمة.'
+    },
+    impactPage: {
+      title: 'تأثير مبالن في الميدان',
+      subtitle: 'تابع أحدث مبادراتنا وقصص التغيير في جميع أنحاء الكاميرون.',
+      news: [
+        { title: 'طوارئ نغاونديري: توزيع مجموعات البقاء على الأسر الضعيفة', tag: 'إنساني', date: 'مارس 2024' },
+        { title: 'التعليم للجميع: إطلاق برنامج دعم مدرسي جديد', tag: 'تعليم', date: 'فبراير 2024' },
+        { title: 'المواطنة البيئية: حملة توعية كبرى وتنظيف حضري', tag: 'بيئة', date: 'يناير 2024' }
+      ],
+      note: 'يتم تحديث هذا القسم بانتظام لضمان الشفافية ودعوة متطوعين جدد للانضمام إلى مهمتنا.',
+      donationTitle: 'تبرعك، محرك للتحول',
+      donationMessage: 'كل مساهمة هي خطوة أقرب إلى الكرامة. تبرعاتك تمول مشاريعنا الميدانية مباشرة وتضمن وجودنا الدائم لمن يحتاجوننا.',
+      donationCTA: 'ادعم أعمالنا — كل بادرة لها قيمتها.',
+      donationOptions: ['تبرع لمرة واحدة', 'دعم شهري', 'رعاية مشروع'],
+      paymentMethods: 'مدفوعات آمنة: الهاتف المحمول، بطاقة الائتمان، التحويل المصرفي.'
+    },
+    contactPage: {
+      title: 'لنكن على تواصل ونتحرك',
+      subtitle: 'لديك سؤال؟ مشروع شراكة؟ فريقنا يستمع إليك.',
+      addressLabel: 'المقر الرئيسي',
+      addressValue: 'نغاونديري، قسم فينا، منطقة أداماوا، الكاميرون',
+      emailLabel: 'البريد الإلكتروني',
+      emailValue: 'contact@mballen.cm',
+      phoneLabel: 'الهاتف',
+      phoneValues: ['+237 696 68 40 41', '+237 673 01 65 85'],
+      tagline: 'نساعد اليوم. نبني الغد.'
+    },
+    joinUsPage: {
+      title: 'انضم إلى مغامرة مبالن',
+      subtitle: 'وقتك ومهاراتك هي أجمل الهدايا التي يمكنك تقديمها.',
+      volunteerTitle: 'كن متطوعًا',
+      volunteerDesc: 'شارك مباشرة في أعمالنا الميدانية أو ساعدنا عن بعد. كل يد عون لها قيمتها.',
+      internshipTitle: 'تدريب وتعلم',
+      internshipDesc: 'طور مهاراتك في خدمة قضية نبيلة واكتشف القطاع الإنساني في الكاميرون.',
+      cta: 'قدم الآن'
+    },
+    pressPage: {
+      title: 'منطقة الصحافة والإعلام',
+      subtitle: 'ابحث عن بياناتنا الصحفية الرسمية ومواردنا الإعلامية.',
+      kitTitle: 'المجموعة الإعلامية',
+      kitDesc: 'قم بتنزيل مجموعتنا الكاملة بما في ذلك الشعارات والصور عالية الدقة والأرقام الرئيسية.',
+      contactTitle: 'الاتصال الإعلامي',
+      releases: [
+        { date: '15 مارس 2024', title: 'شراكة استراتيجية للتنمية الريفية' },
+        { date: '02 فبراير 2024', title: 'تقرير الأثر: 10,000 عائلة تم دعمها في عام واحد' }
+      ]
+    },
+    reportsPage: {
+      title: 'الشفافية والحوكمة',
+      subtitle: 'نحن مسؤولون عن كل فرنك يتم استثماره في خدمة الناس.',
+      annualReportsTitle: 'تقارير النشاط',
+      transparencyTitle: 'التزامنا',
+      transparencyDesc: 'تعتمد ثقة مانحينا على إدارة صارمة وشفافة لمواردنا.',
+      reports: [
+        { year: '2023', title: 'تقرير الأثر السنوي - نحو الاعتماد على الذات' },
+        { year: '2022', title: 'تقرير الأثر السنوي - التضامن النشط' }
+      ]
+    },
+    domains: {
+      title: 'مجالات عملنا الرئيسية',
+      subtitle: '',
+      cta: '👉 اكتشف جميع أعمالنا',
+      items: [
+        { title: '🤝 الحماية والشمول الاجتماعي', desc: 'مرافقة الأشخاص المستضعفين نحو حياة كريمة.' },
+        { title: '🚑 المساعدة الإنسانية والاجتماعية', desc: 'التدخل السريع لتقديم المساعدة والرعاية الأساسية.' },
+        { title: '💧 المياه النظيفة والنظافة والصرف الصحي', desc: 'ضمان الوصول إلى المياه النظيفة والظروف الصحية.' },
+        { title: '🌱 البيئة وتغير المناخ', desc: 'الحفاظ على النظام البيئي للأجيال القادمة.' },
+        { title: '🛠️ البنية التحتية المجتمعية', desc: 'تحسين ظروف المعيشة من خلال البناء المجتمعي.' },
+        { title: '💼 التمكين الاقتصادي', desc: 'دعم الاقتصاد المحلي وريادة الأعمال.' }
+      ]
+    },
+    fieldActions: {
+      title: 'أعمالنا في الميدان',
+      items: [
+        'ندوات توعية لحماية البيئة',
+        'أعمال للأشخاص ذوي الإعاقة',
+        'توزيع التبرعات على دور الأيتام',
+        'مشاريع مجتمعية في المناطق الضعيفة'
+      ],
+      conclusion: 'كل عمل يتم تنفيذه مع المجتمعات، لتأثير دائم.'
+    },
+    callToAction: {
+      title: 'دعوة للعمل',
+      heading: 'يمكنك تغيير الحياة معنا',
+      desc: 'دعمكم يتيح حلولاً ملموسة حيث تكون الاحتياجات أكثر إلحاحًا.',
+      links: ['👉 تبرع', '👉 كن شريكًا', '👉 شارك']
+    },
+    don: {
+      title: 'كن جزءًا من التغيير',
+      desc: 'كرمكم هو أساس استقلالنا وفعاليتنا.',
+      reasons: [
+        'مساعدة مباشرة دون وسطاء غير ضروريين',
+        'شفافية كاملة في استخدام الأموال',
+        'تأثير محلي قابل للقياس ومستدام',
+        'دعم للخبرة الكاميرونية الملتزمة'
+      ],
+      cta: 'تبرع الآن'
+    },
+    footer: {
+      description: "استعادة الكرامة لمستقبل مفعم بالأمل. معًا، لنزرع التضامن.",
+      navigation: "تصفح",
+      privacy: "الخصوصية",
+      contact: "اتصل بنا",
+      address: "ياوندي، الكاميرون",
+      emailPlaceholder: "بريدك الإلكتروني",
+      emailLabel: "عنوان بريدك الإلكتروني",
+      newsletter: 'النشرة الإخبارية',
+      newsletterDesc: 'اشترك لتلقي تحديثات حول أعمالنا الميدانية.',
+      subscribe: 'اشترك',
+      rights: '© 2025 منظمة مبالن. جميع الحقوق محفوظة.',
+      links: {
+        join: 'انضم إلينا',
+        press: 'الصحافة والإعلام',
+        reports: 'التقارير'
       }
     }
   }

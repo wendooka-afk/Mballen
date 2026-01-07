@@ -1,5 +1,5 @@
 
-export type Language = 'fr' | 'en' | 'tr';
+export type Language = 'fr' | 'en' | 'tr' | 'ar';
 
 export interface NavLink {
   name: string;
@@ -11,14 +11,20 @@ export interface TranslationSchema {
     home: string;
     about: string;
     actions: string;
+    projects?: string;
+    partners?: string;
     impact: string;
     contact: string;
     cta: string;
   };
   hero: {
+    badge?: string;
     title: string;
     subtitle: string;
+    tagline?: string;
     ctaDon: string;
+    ctaPartner?: string;
+    ctaContact?: string;
     ctaActions: string;
   };
   mission: {
@@ -34,8 +40,12 @@ export interface TranslationSchema {
     identityDesc: string;
     visionTitle: string;
     visionDesc: string;
+    missionTitle?: string;
+    missionDesc?: string;
     valuesTitle: string;
     values: string[];
+    mottoTitle?: string;
+    motto?: string;
   };
   actionsPage: {
     title: string;
@@ -43,7 +53,26 @@ export interface TranslationSchema {
     items: {
       title: string;
       desc: string;
+      subItems?: string[];
     }[];
+  };
+  projectsPage?: {
+    title: string;
+    intro: string;
+    categories: {
+      title: string;
+      items: string[];
+    }[];
+    cta: string;
+  };
+  partnersPage?: {
+    title: string;
+    intro: string;
+    whyTitle: string;
+    whyItems: string[];
+    potentialTitle: string;
+    potentialItems: string[];
+    cta: string;
   };
   impactPage: {
     title: string;
@@ -68,12 +97,9 @@ export interface TranslationSchema {
     emailLabel: string;
     emailValue: string;
     phoneLabel: string;
-    phoneValue: string;
-    socialTitle: string;
-    socialDesc: string;
-    whyTitle: string;
-    whySubtitle: string;
-    reasons: string[];
+
+    phoneValues: string[];
+    tagline?: string;
   };
   joinUsPage: {
     title: string;
@@ -109,10 +135,22 @@ export interface TranslationSchema {
   domains: {
     title: string;
     subtitle: string;
+    cta?: string;
     items: {
       title: string;
       desc: string;
     }[];
+  };
+  fieldActions?: {
+    title: string;
+    items: string[];
+    conclusion: string;
+  };
+  callToAction?: {
+    title: string;
+    heading: string;
+    desc: string;
+    links: string[];
   };
   don: {
     title: string;
@@ -121,6 +159,13 @@ export interface TranslationSchema {
     cta: string;
   };
   footer: {
+    description: string;
+    navigation: string;
+    privacy: string;
+    contact: string;
+    address: string;
+    emailPlaceholder: string;
+    emailLabel: string;
     newsletter: string;
     newsletterDesc: string;
     subscribe: string;
