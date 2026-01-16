@@ -9,7 +9,7 @@ export const AboutPage: React.FC = () => {
         <div className="pt-32 pb-20 animate-in fade-in duration-1000">
             <div className="max-w-7xl mx-auto px-6">
                 <header className="text-center mb-24 max-w-4xl mx-auto">
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#064e3b] tracking-tighter leading-none mb-10">{t.about.title}</h1>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#064e3b] tracking-tighter leading-none mb-10">{t.about.title}</h1>
                 </header>
 
                 {/* Identity Section */}

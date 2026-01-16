@@ -18,6 +18,7 @@ import { JoinUsPage } from './pages/JoinUsPage';
 import { PressPage } from './pages/PressPage';
 import { ReportsPage } from './pages/ReportsPage';
 import { LegalPage } from './pages/LegalPage';
+import { ActivityDetailPage } from './pages/ActivityDetailPage';
 
 export default function App() {
     const { t } = useApp();
@@ -41,6 +42,7 @@ export default function App() {
                     <Route path="/reports" element={<ReportsPage />} />
                     <Route path="/privacy" element={<LegalPage type="privacy" />} />
                     <Route path="/terms" element={<LegalPage type="terms" />} />
+                    <Route path="/activities/:slug" element={<ActivityDetailPage />} />
                 </Routes>
             </main>
 

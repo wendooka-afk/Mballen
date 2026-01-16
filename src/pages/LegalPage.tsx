@@ -5,7 +5,7 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' }> = ({ type }) => 
     return (
         <div className="pt-32 pb-20 animate-in fade-in duration-1000">
             <div className="max-w-4xl mx-auto px-6">
-                <h1 className="text-4xl font-black text-[#064e3b] mb-12">{type === 'privacy' ? 'Politique de Confidentialité' : 'Conditions Générales'}</h1>
+                <h1 className="text-3xl font-black text-[#064e3b] mb-12">{type === 'privacy' ? 'Politique de Confidentialité' : 'Conditions Générales'}</h1>
                 <div className="prose prose-emerald max-w-none text-slate-600 space-y-8 font-medium">
                     <p>Dernière mise à jour : 24 Mai 2024</p>
                     <section className="space-y-4">

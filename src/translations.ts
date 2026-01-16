@@ -78,6 +78,45 @@ export const translations: Record<Language, TranslationSchema> = {
           desc: '',
           subItems: ['Sensibilisation à la pollution et au changement climatique', 'Promotion du reboisement', 'Lutte contre la déforestation', 'Protection des ressources naturelles']
         }
+      ],
+      activities: [
+        {
+          slug: "journee-internationale-handicap-2025",
+          title: "Journée internationale des personnes handicapées : l’ONG MBALLEN engagée pour l’inclusion",
+          date: "03 décembre 2025",
+          content: [
+            "À l’occasion de la Journée internationale des personnes handicapées, célébrée le 03 décembre 2025, l’ONG MBALLEN a pris part aux activités organisées en tant que partenaire, réaffirmant ainsi son engagement en faveur de l’inclusion sociale et du respect des droits des personnes handicapées.",
+            "Cette journée a été un moment fort de sensibilisation, de partage et de solidarité, mettant en lumière les défis quotidiens auxquels font face les personnes en situation de handicap, mais aussi leur potentiel et leur contribution au développement de la society.",
+            "À travers sa participation, l’ONG MBALLEN a soutenu les messages de lutte contre la discrimination, de promotion de l’égalité des chances et de reconnaissance de la dignité des personnes handicapées. L’organisation œuvre activement pour une société plus inclusive, où chaque individu, sans distinction, peut vivre dignement et participer pleinement à la vie communautaire.",
+            "Cette action s’inscrit pleinement dans la mission de l’ONG MBALLEN, qui place la protection des personnes vulnérables et la lutte contre la marginalisation au cœur de ses priorités."
+          ],
+          tagline: "👉 Pour une société inclusive, solidaire et respectueuse des droits de tous.",
+          images: [
+            "/journée%20internationale%20des%20personnes%20handicapées%20le%2003%20décembre%202025%20hero.jpeg",
+            "/journée%20internationale%20des%20personnes%20handicapées%20le%2003%20décembre%202025.jpeg"
+          ]
+        },
+        {
+          slug: "seminaire-sensibilisation-environnement-sabongari",
+          title: "Séminaire de sensibilisation à la protection de l’environnement au Lycée de Sabongari (Ngaoundéré)",
+          date: "Janvier 2026",
+          content: [
+            "Dans le cadre de ses actions en faveur de la protection de l’environnement et de la lutte contre le changement climatique, l’ONG MBALLEN a organisé un séminaire de sensibilisation au Lycée de Sabongari à Ngaoundéré.",
+            "Cette activité a réuni des élèves et des enseignants autour des enjeux majeurs liés à la préservation de l’environnement, notamment la lutte contre la pollution, les effets du changement climatique et l’importance des comportements écoresponsables au quotidien.",
+            "À travers des échanges interactifs, des messages éducatifs et des exemples concrets, l’ONG MBALLEN a encouragé les jeunes à devenir de véritables acteurs de la protection de leur environnement, en adoptant des gestes simples mais essentiels tels que la gestion des déchets, la protection des arbres et la lutte contre la déforestation.",
+            "Ce séminaire s’inscrit dans la vision de l’ONG MBALLEN qui vise à former et sensibiliser les jeunes générations, piliers d’un développement durable et d’un avenir respectueux de l’environnement."
+          ],
+          tagline: "👉 Ensemble, éduquons aujourd’hui pour protéger demain.",
+          images: [
+            "/Seminaire sensibilisation Lycée Sabongar hero.jpeg",
+            "/Seminaire sensibilisation Lycée Sabongari Salle .jpeg",
+            "/Seminaire sensibilisation Lycée Sabongari plantation arbres 1.jpeg",
+            "/Seminaire sensibilisation Lycée Sabongari plantation arbres 2.jpeg",
+            "/Seminaire sensibilisation Lycée Sabongari plantation arbres 3.jpeg",
+            "/Seminaire sensibilisation Lycée Sabongari plantation arbres 4.jpeg",
+            "/Seminaire sensibilisation Lycée Sabongari salle 2.jpeg"
+          ]
+        }
       ]
     },
     impactPage: {
@@ -224,7 +263,7 @@ export const translations: Record<Language, TranslationSchema> = {
       navigation: "Navigation",
       privacy: "Confidentialité",
       contact: "Contact",
-      address: "Yaoundé, Cameroun",
+      address: "Ngaoundéré, Cameroun",
       emailPlaceholder: "Votre email",
       emailLabel: "Votre adresse e-mail",
       newsletter: 'Newsletter',
@@ -290,6 +329,45 @@ export const translations: Record<Language, TranslationSchema> = {
         { title: '4. Community Infrastructure', desc: 'Rehabilitating and building health centers and schools to strengthen the foundation of local development.' },
         { title: '5. Environmental Resilience', desc: 'Promoting sustainable practices and fighting climate degradation to protect tomorrow’s resources.' },
         { title: '6. Cooperation & Partnerships', desc: 'Building strategic alliances to pool expertise and amplify the impact of our interventions.' }
+      ],
+      activities: [
+        {
+          slug: "international-day-persons-with-disabilities-2025",
+          title: "International Day of Persons with Disabilities: MBALLEN NGO Committed to Inclusion",
+          date: "December 03, 2025",
+          content: [
+            "On the occasion of the International Day of Persons with Disabilities, celebrated on December 03, 2025, MBALLEN NGO took part in organized activities as a partner, reaffirming its commitment to social inclusion and respect for the rights of persons with disabilities.",
+            "This day was a powerful moment for awareness, sharing, and solidarity, highlighting the daily challenges faced by people with disabilities, but also their potential and contribution to societal development.",
+            "Through its participation, MBALLEN NGO supported messages fighting discrimination, promoting equal opportunities, and recognizing the dignity of persons with disabilities. The organization works actively for a more inclusive society, where every individual, without distinction, can live with dignity and fully participate in community life.",
+            "This action is fully in line with MBALLEN NGO's mission, which places the protection of vulnerable people and the fight against marginalization at the heart of its priorities."
+          ],
+          tagline: "👉 For an inclusive, supportive, and rights-respecting society for all.",
+          images: [
+            "/journée%20internationale%20des%20personnes%20handicapées%20le%2003%20décembre%202025%20hero.jpeg",
+            "/journée%20internationale%20des%20personnes%20handicapées%20le%2003%20décembre%202025.jpeg"
+          ]
+        },
+        {
+          slug: "environmental-awareness-seminar-sabongari-high-school",
+          title: "Environmental Protection Awareness Seminar at Sabongari High School (Ngaoundéré)",
+          date: "January 2026",
+          content: [
+            "As part of its actions in favor of environmental protection and the fight against climate change, MBALLEN NGO organized an awareness seminar at Sabongari High School in Ngaoundéré.",
+            "This activity brought together students and teachers around major issues related to environmental preservation, including the fight against pollution, the effects of climate change, and the importance of eco-responsible behavior in daily life.",
+            "Through interactive exchanges, educational messages, and concrete examples, MBALLEN NGO encouraged young people to become true actors in protecting their environment, by adopting simple but essential gestures such as waste management, tree protection, and the fight against deforestation.",
+            "This seminar is part of MBALLEN NGO's vision, which aims to train and sensitize younger generations, pillars of sustainable development and a future respectful of the environment."
+          ],
+          tagline: "👉 Together, let's educate today to protect tomorrow.",
+          images: [
+            "/Seminaire sensibilisation Lycée Sabongar hero.jpeg",
+            "/Seminaire sensibilisation Lycée Sabongari Salle .jpeg",
+            "/Seminaire sensibilisation Lycée Sabongari plantation arbres 1.jpeg",
+            "/Seminaire sensibilisation Lycée Sabongari plantation arbres 2.jpeg",
+            "/Seminaire sensibilisation Lycée Sabongari plantation arbres 3.jpeg",
+            "/Seminaire sensibilisation Lycée Sabongari plantation arbres 4.jpeg",
+            "/Seminaire sensibilisation Lycée Sabongari salle 2.jpeg"
+          ]
+        }
       ]
     },
     impactPage: {
@@ -435,7 +513,7 @@ export const translations: Record<Language, TranslationSchema> = {
       navigation: "Navigation",
       privacy: "Privacy",
       contact: "Contact",
-      address: "Yaoundé, Cameroon",
+      address: "Ngaoundéré, Cameroon",
       emailPlaceholder: "Your email",
       emailLabel: "Your email address",
       newsletter: 'Newsletter',
@@ -646,7 +724,7 @@ export const translations: Record<Language, TranslationSchema> = {
       navigation: "Gezinme",
       privacy: "Gizlilik",
       contact: "İletişim",
-      address: "Yaoundé, Kamerun",
+      address: "Ngaoundéré, Kamerun",
       emailPlaceholder: "E-postanız",
       emailLabel: "E-posta adresiniz",
       newsletter: 'Bülten',

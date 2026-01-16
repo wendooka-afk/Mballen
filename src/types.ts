@@ -55,6 +55,14 @@ export interface TranslationSchema {
       desc: string;
       subItems?: string[];
     }[];
+    activities?: {
+      slug: string;
+      title: string;
+      date: string;
+      content: string[];
+      tagline?: string;
+      images: string[];
+    }[];
   };
   projectsPage?: {
     title: string;
