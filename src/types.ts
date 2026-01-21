@@ -46,6 +46,7 @@ export interface TranslationSchema {
     values: string[];
     mottoTitle?: string;
     motto?: string;
+    founderRole?: string;
   };
   actionsPage: {
     title: string;
@@ -158,7 +159,13 @@ export interface TranslationSchema {
     title: string;
     heading: string;
     desc: string;
-    links: string[];
+    options: {
+      icon: string;
+      title: string;
+      desc: string;
+      cta: string;
+      url: string;
+    }[];
   };
   don: {
     title: string;

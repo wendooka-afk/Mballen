@@ -38,7 +38,7 @@ export const translations: Record<Language, TranslationSchema> = {
     about: {
       title: 'À propos de Mballen',
       identityTitle: 'Qui sommes-nous ?',
-      identityDesc: 'L\'ONG MBALLEN est une organisation non gouvernementale à caractère unipersonnel, fondée par M. Oumarou Sanda Aboubakar, et officiellement agréée par l\'État camerounais par arrêté ministériel du 22 novembre 2024.\n\nBasée à N\'Gaoundéré, dans la région de l\'Adamaoua, l\'ONG intervient sur l\'ensemble du territoire camerounais selon les besoins et les partenariats.',
+      identityDesc: 'L\'ONG MBALLEN est une organisation non gouvernementale à caractère unipersonnel, fondée par M. Oumarou Sanda Aboubakar, et légalement reconnue par l\'État camerounais. Elle a été officiellement agréée par arrêté ministériel n° 000113/A/MINAT/SG/DAP/SDEP/SONG/BA du 22 novembre 2024, signé par le Ministre de l\'Administration Territoriale.\n\nBasée à N\'Gaoundéré, dans la région de l\'Adamaoua, l\'ONG MBALLEN intervient sur l\'ensemble du territoire camerounais en fonction des besoins identifiés et des partenariats établis. Son action s\'inscrit dans une dynamique de développement humain durable et inclusif, au service des populations vulnérables et marginalisées.',
       visionTitle: 'Notre vision',
       visionDesc: 'Contribuer à l\'émergence de communautés solidaires, autonomes et résilientes, où chaque individu vit dans la dignité et participe pleinement au développement.',
       missionTitle: 'Notre mission',
@@ -52,7 +52,8 @@ export const translations: Record<Language, TranslationSchema> = {
         'Engagement communautaire'
       ],
       mottoTitle: 'Devise',
-      motto: 'Solidarité – Paix – Développement'
+      motto: 'Solidarité – Paix – Développement',
+      founderRole: 'Fondateur'
     },
     actionsPage: {
       title: 'Nos actions au service des communautés',
@@ -242,10 +243,32 @@ export const translations: Record<Language, TranslationSchema> = {
       conclusion: 'Chaque action est menée avec les communautés, pour un impact durable.'
     },
     callToAction: {
-      title: 'Appel à l\'engagement',
-      heading: 'Vous pouvez changer des vies avec nous',
-      desc: 'Votre soutien permet d\'apporter des solutions concrètes là où les besoins sont les plus urgents.',
-      links: ['👉 Faire un don', '👉 Devenir partenaire', '👉 S\'engager']
+      title: 'Agissez aujourd\'hui. Choisissez votre impact.',
+      heading: 'Avec l\'ONG MBALLEN, votre solidarité se transforme en actions concrètes au service des populations vulnérables.',
+      desc: '',
+      options: [
+        {
+          icon: '🎓',
+          title: 'Parrainage d\'élève',
+          desc: 'Offrez à un enfant vulnérable l\'accès à l\'éducation et à un avenir meilleur.',
+          cta: 'Parrainer un élève',
+          url: 'https://wzkyncjg.mychariow.shop/parrainage-educatif'
+        },
+        {
+          icon: '💧',
+          title: 'Construction de puits / forage',
+          desc: 'Participez à l\'accès à l\'eau potable pour toute une communauté grâce à des contributions solidaires.',
+          cta: 'Contribuer à un puits',
+          url: 'https://wzkyncjg.mychariow.shop/un-forage-pour-la-vie'
+        },
+        {
+          icon: '❤️',
+          title: 'Don solidaire MBALLEN',
+          desc: 'Soutenez l\'ensemble des actions humanitaires, sociales et environnementales de l\'ONG.',
+          cta: 'Faire un don solidaire',
+          url: 'https://wzkyncjg.mychariow.shop/don-solidaire-mballen'
+        }
+      ]
     },
     don: {
       title: 'Participez au changement',
@@ -313,11 +336,12 @@ export const translations: Record<Language, TranslationSchema> = {
     about: {
       title: 'A unified force rooted in local communities',
       identityTitle: 'Who are we?',
-      identityDesc: 'Founded by Mr. Oumarou Sanda Aboubakar, MBALLEN NGO embodies mutual aid and social innovation. Authorized by the State of Cameroon, it works tirelessly to restore hope and human dignity among the most underprivileged social groups.',
+      identityDesc: 'MBALLEN NGO is a non-governmental organization of a sole proprietorship nature, founded by Mr. Oumarou Sanda Aboubakar, and legally recognized by the State of Cameroon. It was officially approved by Ministerial Order No. 000113/A/MINAT/SG/DAP/SDEP/SONG/BA of November 22, 2024, signed by the Minister of Territorial Administration.\n\nBased in Ngaoundéré, in the Adamawa region, MBALLEN NGO operates throughout the Cameroonian territory according to identified needs and established partnerships. Its action is part of a dynamic of sustainable and inclusive human development, serving vulnerable and marginalized populations.',
       visionTitle: 'Our Vision',
       visionDesc: 'A world of solidarity where every individual has the resources and autonomy to become the architect of their own development.',
       valuesTitle: 'Our Core Values',
-      values: ['Active Solidarity', 'Total Integrity', 'Social Inclusion', 'Human Dignity', 'Local Engagement']
+      values: ['Active Solidarity', 'Total Integrity', 'Social Inclusion', 'Human Dignity', 'Local Engagement'],
+      founderRole: 'Founder'
     },
     actionsPage: {
       title: 'Tangible impact through targeted actions',
@@ -492,10 +516,32 @@ export const translations: Record<Language, TranslationSchema> = {
       conclusion: 'Every action is carried out with the communities, for lasting impact.'
     },
     callToAction: {
-      title: 'Call to Action',
-      heading: 'You can change lives with us',
-      desc: 'Your support enables concrete solutions where needs are most urgent.',
-      links: ['👉 Make a donation', '👉 Become a partner', '👉 Get involved']
+      title: 'Act today. Choose your impact.',
+      heading: 'With MBALLEN NGO, your solidarity transforms into concrete actions serving vulnerable populations.',
+      desc: '',
+      options: [
+        {
+          icon: '🎓',
+          title: 'Student Sponsorship',
+          desc: 'Offer a vulnerable child access to education and a better future.',
+          cta: 'Sponsor a student',
+          url: 'https://wzkyncjg.mychariow.shop/parrainage-educatif'
+        },
+        {
+          icon: '💧',
+          title: 'Well / Borehole Construction',
+          desc: 'Participate in providing clean water access for an entire community through solidarity contributions.',
+          cta: 'Contribute to a well',
+          url: 'https://wzkyncjg.mychariow.shop/un-forage-pour-la-vie'
+        },
+        {
+          icon: '❤️',
+          title: 'MBALLEN Solidarity Donation',
+          desc: 'Support all humanitarian, social, and environmental actions of the NGO.',
+          cta: 'Make a solidarity donation',
+          url: 'https://wzkyncjg.mychariow.shop/don-solidaire-mballen'
+        }
+      ]
     },
     don: {
       title: 'Be part of the change',
@@ -563,11 +609,12 @@ export const translations: Record<Language, TranslationSchema> = {
     about: {
       title: 'Yerel topluluklara kök salmış dayanışma gücü',
       identityTitle: 'Biz kimiz?',
-      identityDesc: 'Sayın Oumarou Sanda Aboubakar tarafından kurulan MBALLEN STK, yardımlaşma ve sosyal inovasyonu temsil eder. Kamerun Devleti onaylı kuruluşumuz, en yoksul sosyal gruplar arasında onuru yeniden tesis etmek için çalışır.',
+      identityDesc: 'MBALLEN STK, Sayın Oumarou Sanda Aboubakar tarafından kurulan ve Kamerun Devleti tarafından yasal olarak tanınan, tek kişilik bir sivil toplum kuruluşudur. 22 Kasım 2024 tarihli ve Bölgesel Yönetim Bakanı tarafından imzalanan 000113/A/MINAT/SG/DAP/SDEP/SONG/BA sayılı Bakanlık Kararı ile resmen onaylanmıştır.\n\nAdamawa bölgesindeki Ngaoundéré merkezli MBALLEN STK, belirlenen ihtiyaçlara ve kurulan ortaklıklara göre Kamerun topraklarının tamamında faaliyet göstermektedir. Eylemleri, savunmasız ve dışlanmış nüfusların hizmetinde, sürdürülebilir ve kapsayıcı bir insani kalkınma dinamiginin bir parçasıdır.',
       visionTitle: 'Vizyonumuz',
       visionDesc: 'Her bireyin kendi gelişiminin mimarı olabilmek için gerekli kaynaklara ve özerkliğe sahip olduğu bir dayanışma dünyası.',
       valuesTitle: 'Temel Değerlerimiz',
-      values: ['Aktif Dayanışma', 'Tam Dürüstlük', 'Sosyal Kapsayıcılık', 'İnsan Onuru', 'Yerel Bağlılık']
+      values: ['Aktif Dayanışma', 'Tam Dürüstlük', 'Sosyal Kapsayıcılık', 'İnsan Onuru', 'Yerel Bağlılık'],
+      founderRole: 'Kurucu'
     },
     actionsPage: {
       title: 'Hedefli eylemlerle somut etki',
@@ -703,10 +750,32 @@ export const translations: Record<Language, TranslationSchema> = {
       conclusion: 'Her eylem, kalıcı etki için topluluklarla birlikte yürütülür.'
     },
     callToAction: {
-      title: 'Harekete Geçme Çağrısı',
-      heading: 'Bizimle hayat değiştirebilirsiniz',
-      desc: 'Desteğiniz, ihtiyaçların en acil olduğu yerlerde somut çözümler sağlar.',
-      links: ['👉 Bağış Yap', '👉 Ortak Ol', '👉 Katılın']
+      title: 'Bugün hareket edin. Etkisini seçin.',
+      heading: 'MBALLEN STK ile dayanışmanız, savunmasız nüfuslara hizmet eden somut eylemlere dönüşür.',
+      desc: '',
+      options: [
+        {
+          icon: '🎓',
+          title: 'Öğrenci Sponsorluğu',
+          desc: 'Savunmasız bir çocuğa eğitime erişim ve daha iyi bir gelecek sunun.',
+          cta: 'Bir öğrenciye sponsor ol',
+          url: 'https://wzkyncjg.mychariow.shop/parrainage-educatif'
+        },
+        {
+          icon: '💧',
+          title: 'Kuyu / Sondaj İnşaatı',
+          desc: 'Dayanışma katkılarıyla tüm bir topluluk için temiz su erişimine katılın.',
+          cta: 'Bir kuyuya katkıda bulun',
+          url: 'https://wzkyncjg.mychariow.shop/un-forage-pour-la-vie'
+        },
+        {
+          icon: '❤️',
+          title: 'MBALLEN Dayanışma Bağışı',
+          desc: 'STK\'nın tüm insani, sosyal ve çevresel eylemlerini destekleyin.',
+          cta: 'Dayanışma bağışı yap',
+          url: 'https://wzkyncjg.mychariow.shop/don-solidaire-mballen'
+        }
+      ]
     },
     don: {
       title: 'Değişimin bir parçası olun',
@@ -774,11 +843,12 @@ export const translations: Record<Language, TranslationSchema> = {
     about: {
       title: 'قوة موحدة متجذرة في المجتمعات المحلية',
       identityTitle: 'من نحن؟',
-      identityDesc: 'أسسها السيد عمر ساندا أبو بكر، وتجسد منظمة مبالن المساعدة المتبادلة والابتكار الاجتماعي. معتمدة من الدولة الكاميرونية، وتعمل بلا كلل لاستعادة الأمل والكرامة الإنسانية بين الفئات الاجتماعية الأكثر حرمانًا.',
+      identityDesc: 'منظمة مبالن غير الحكومية هي منظمة غير حكومية ذات طابع فردي، أسسها السيد عمر ساندا أبو بكر، ومعترف بها قانونيًا من قبل الدولة الكاميرونية. وقد تم اعتمادها رسميًا بموجب القرار الوزاري رقم 000113/A/MINAT/SG/DAP/SDEP/SONG/BA بتاريخ 22 نوفمبر 2024، الموقع من قبل وزير الإدارة الإقليمية.\n\nيقع مقر منظمة مبالن في نغاوندي، في منطقة أداماوا، وتعمل في جميع أنحاء الأراضي الكاميرونية وفقًا للاحتياجات المحددة والشراكات القائمة. يندرج عملها ضمن ديناميكية التنمية البشرية المستدامة والشاملة، في خدمة السكان المستضعفين والمهمشين.',
       visionTitle: 'رؤيتنا',
       visionDesc: 'عالم متضامن يمتلك فيه كل فرد الموارد والاستقلالية ليصبح مهندس تنميته الخاصة.',
       valuesTitle: 'قيمنا الأساسية',
-      values: ['التضامن النشط', 'النزاهة التامة', 'الشمول الاجتماعي', 'الكرامة الإنسانية', 'التزام محلي']
+      values: ['التضامن النشط', 'النزاهة التامة', 'الشمول الاجتماعي', 'الكرامة الإنسانية', 'التزام محلي'],
+      founderRole: 'المؤسس'
     },
     actionsPage: {
       title: 'تأثير ملموس من خلال إجراءات هادفة',
@@ -915,10 +985,32 @@ export const translations: Record<Language, TranslationSchema> = {
       conclusion: 'كل عمل يتم تنفيذه مع المجتمعات، لتأثير دائم.'
     },
     callToAction: {
-      title: 'دعوة للعمل',
-      heading: 'يمكنك تغيير الحياة معنا',
-      desc: 'دعمكم يتيح حلولاً ملموسة حيث تكون الاحتياجات أكثر إلحاحًا.',
-      links: ['👉 تبرع', '👉 كن شريكًا', '👉 شارك']
+      title: 'تصرف اليوم. اختر تأثيرك.',
+      heading: 'مع منظمة مبالن، يتحول تضامنك إلى إجراءات ملموسة لخدمة السكان المستضعفين.',
+      desc: '',
+      options: [
+        {
+          icon: '🎓',
+          title: 'رعاية طالب',
+          desc: 'امنح طفلاً مستضعفًا الوصول إلى التعليم ومستقبل أفضل.',
+          cta: 'رعاية طالب',
+          url: 'https://wzkyncjg.mychariow.shop/parrainage-educatif'
+        },
+        {
+          icon: '💧',
+          title: 'بناء بئر / حفر',
+          desc: 'شارك في توفير الوصول إلى المياه النظيفة لمجتمع بأكمله من خلال المساهمات التضامنية.',
+          cta: 'المساهمة في بئر',
+          url: 'https://wzkyncjg.mychariow.shop/un-forage-pour-la-vie'
+        },
+        {
+          icon: '❤️',
+          title: 'تبرع تضامني لمبالن',
+          desc: 'ادعم جميع الإجراءات الإنسانية والاجتماعية والبيئية للمنظمة.',
+          cta: 'قدم تبرعًا تضامنيًا',
+          url: 'https://wzkyncjg.mychariow.shop/don-solidaire-mballen'
+        }
+      ]
     },
     don: {
       title: 'كن جزءًا من التغيير',

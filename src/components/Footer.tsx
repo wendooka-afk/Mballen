@@ -33,6 +33,7 @@ export const Footer: React.FC = () => {
                     <nav aria-label="Liens secondaires">
                         <h4 className="font-black text-[#064e3b] text-sm uppercase tracking-widest mb-8">{t.footer.navigation}</h4>
                         <ul className="space-y-4 text-slate-500 font-bold text-sm">
+                            <li><a href="https://wzkyncjg.mychariow.shop/" target="_blank" rel="noopener noreferrer" className="text-[#064e3b] font-black hover:underline">Faire un don</a></li>
                             <li><Link to="/join-us" className="hover:text-[#064e3b] focus:underline">{t.footer.links.join}</Link></li>
                             <li><Link to="/press" className="hover:text-[#064e3b] focus:underline">{t.footer.links.press}</Link></li>
                             <li><Link to="/reports" className="hover:text-[#064e3b] focus:underline">{t.footer.links.reports}</Link></li>

@@ -39,12 +39,14 @@ export const HomePage: React.FC = () => {
                             </p>
                         )}
                         <div className="flex flex-col sm:flex-row flex-wrap gap-4">
-                            <Link
-                                to="/impact"
+                            <a
+                                href="https://wzkyncjg.mychariow.shop/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="bg-[#064e3b] text-white px-8 py-4 rounded-full font-bold text-base hover:bg-emerald-900 transition-all flex items-center justify-center gap-2 shadow-2xl shadow-emerald-900/30"
                             >
                                 {t.hero.ctaDon}
-                            </Link>
+                            </a>
                             {t.hero.ctaPartner && (
                                 <Link
                                     to="/contact"

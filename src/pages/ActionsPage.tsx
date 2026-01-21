@@ -16,7 +16,7 @@ export const ActionsPage: React.FC = () => {
         <div className="pt-32 pb-20 animate-in fade-in duration-1000">
             <div className="max-w-7xl mx-auto px-6">
                 <header className="text-center mb-20 max-w-4xl mx-auto">
-                    <h1 className="text-4xl md:text-5xl font-black text-[#064e3b] tracking-tighter leading-none mb-10 text-balance uppercase tracking-[calc(-0.05em)]">{t.actionsPage.title}</h1>
+                    <h1 className="text-4xl md:text-5xl font-black text-[#064e3b] tracking-tighter leading-none mb-10 text-balance">{t.actionsPage.title}</h1>
                     <p className="text-xl text-slate-600 leading-relaxed font-medium">{t.actionsPage.intro}</p>
                 </header>
 
@@ -47,7 +47,7 @@ export const ActionsPage: React.FC = () => {
                     <section className="mt-20">
                         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
                             <div>
-                                <h2 className="text-4xl md:text-6xl font-black text-[#064e3b] tracking-tighter uppercase">Actualités & Activités</h2>
+                                <h2 className="text-4xl md:text-6xl font-black text-[#064e3b] tracking-tighter">Actualités & Activités</h2>
                                 <p className="text-xl text-slate-500 font-medium mt-4 max-w-2xl">Découvrez nos interventions récentes sur le terrain et l'impact de nos actions.</p>
                             </div>
                         </div>

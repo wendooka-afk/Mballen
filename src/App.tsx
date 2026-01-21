@@ -51,8 +51,10 @@ export default function App() {
 
             {/* Fixed Donation CTA */}
             <div className="fixed bottom-8 right-8 z-[40]">
-                <Link
-                    to="/impact"
+                <a
+                    href="https://wzkyncjg.mychariow.shop/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="Faire un don"
                     className="flex items-center gap-3 bg-[#064e3b] text-white p-4 pr-6 rounded-full shadow-2xl shadow-emerald-900/40 hover:scale-105 active:scale-95 transition-all group overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#064e3b]"
                 >
@@ -60,7 +62,7 @@ export default function App() {
                         <Heart size={20} className="fill-white" aria-hidden="true" />
                     </div>
                     <span className="font-bold tracking-tight">{t.nav.cta}</span>
-                </Link>
+                </a>
             </div>
         </div>
     );

@@ -65,12 +65,14 @@ export const Navbar: React.FC = () => {
 
                 <div className="flex items-center gap-4">
                     <LanguageSwitcher />
-                    <Link
-                        to="/impact"
+                    <a
+                        href="https://wzkyncjg.mychariow.shop/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="hidden sm:block bg-[#064e3b] text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-emerald-900/20 hover:bg-emerald-900 transition-all hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#064e3b]"
                     >
                         {t.nav.cta}
-                    </Link>
+                    </a>
                     <button
                         className="lg:hidden p-2 text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#064e3b] rounded"
                         onClick={() => setMobileMenuOpen(true)}
@@ -111,13 +113,15 @@ export const Navbar: React.FC = () => {
                         ))}
                     </div>
                     <div className="mt-auto pt-10 border-t border-slate-100">
-                        <Link
+                        <a
+                            href="https://wzkyncjg.mychariow.shop/"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={() => setMobileMenuOpen(false)}
-                            to="/impact"
                             className="block w-full text-center bg-[#064e3b] text-white py-4 rounded-2xl font-bold text-lg"
                         >
                             {t.nav.cta}
-                        </Link>
+                        </a>
                     </div>
                 </div>
             )}

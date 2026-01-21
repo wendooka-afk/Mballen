@@ -55,7 +55,7 @@ export const ActivityDetailPage: React.FC = () => {
                 )}
 
                 <div className="space-y-8">
-                    <h2 className="text-2xl font-black text-[#064e3b] uppercase tracking-tighter">Galerie de l'activité</h2>
+                    <h2 className="text-2xl font-black text-[#064e3b] tracking-tighter">Galerie de l'activité</h2>
                     <Gallery images={activity.images} />
                 </div>
             </div>

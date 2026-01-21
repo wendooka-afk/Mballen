@@ -16,13 +16,13 @@ export const AboutPage: React.FC = () => {
                 <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-32 items-center">
                     <div className="relative">
                         <img
-                            src="/mballen%20founder.jpg"
-                            className="rounded-[3rem] shadow-2xl relative z-10 aspect-video object-cover"
-                            alt="Founding Team"
+                            src="/Oumarou%20Sanda%20Aboubakar.jpeg"
+                            className="rounded-[3rem] shadow-2xl relative z-10 w-full object-contain bg-slate-50"
+                            alt="Fondateur - M. Oumarou Sanda Aboubakar"
                             loading="lazy"
                         />
                         <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-3xl shadow-xl z-20 border border-slate-50">
-                            <span className="font-black text-[#064e3b] uppercase tracking-tighter text-sm block mb-1">Fondateur</span>
+                            <span className="font-black text-[#064e3b] uppercase tracking-tighter text-sm block mb-1">{t.about.founderRole || 'Fondateur'}</span>
                             <p className="text-slate-700 font-bold text-lg">M. Oumarou Sanda Aboubakar</p>
                         </div>
                     </div>
