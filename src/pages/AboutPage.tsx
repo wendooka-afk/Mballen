@@ -16,7 +16,7 @@ export const AboutPage: React.FC = () => {
                 <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-32 items-center">
                     <div className="relative">
                         <img
-                            src="/Oumarou%20Sanda%20Aboubakar.jpeg"
+                            src="/Oumarou%20Sanda%20Aboubakar%20.jpeg"
                             className="rounded-[3rem] shadow-2xl relative z-10 w-full object-contain bg-slate-50"
                             alt="Fondateur - M. Oumarou Sanda Aboubakar"
                             loading="lazy"
