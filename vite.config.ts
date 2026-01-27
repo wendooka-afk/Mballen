@@ -30,7 +30,7 @@ function apiMiddleware(env: Record<string, string>): Plugin {
               });
 
               const mailOptions = {
-                from: `"Mballen Contact Form" <${env.ZOHO_USER}>`,
+                from: env.ZOHO_USER,
                 to: 'contact@mballen.org',
                 replyTo: email,
                 subject: `[LOCAL TEST] Nouveau message de ${name}: ${subject}`,

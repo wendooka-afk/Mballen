@@ -24,7 +24,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     try {
         const mailOptions = {
-            from: `"Mballen Contact Form" <${process.env.ZOHO_USER}>`,
+            from: process.env.ZOHO_USER,
             to: 'contact@mballen.org',
             replyTo: email,
             subject: `Nouveau message de ${name}: ${subject}`,
