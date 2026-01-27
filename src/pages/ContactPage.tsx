@@ -7,14 +7,37 @@ export const ContactPage: React.FC = () => {
     const { t, showToast, lang } = useApp();
     const [loading, setLoading] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setLoading(true);
-        setTimeout(() => {
+
+        const formData = new FormData(e.target as HTMLFormElement);
+        const data = {
+            name: formData.get('name'),
+            email: formData.get('email'),
+            subject: formData.get('subject'),
+            message: formData.get('message'),
+        };
+
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                showToast(lang === 'fr' ? 'Message envoyé avec succès !' : 'Message sent successfully!');
+                (e.target as HTMLFormElement).reset();
+            } else {
+                const errorData = await response.json();
+                showToast(lang === 'fr' ? `Erreur: ${errorData.error}` : `Error: ${errorData.error}`, 'error');
+            }
+        } catch (error) {
+            showToast(lang === 'fr' ? "Erreur lors de l'envoi du message." : "Error sending message.", 'error');
+        } finally {
             setLoading(false);
-            showToast(lang === 'fr' ? 'Message envoyé avec succès !' : 'Message sent successfully!');
-            (e.target as HTMLFormElement).reset();
-        }, 1500);
+        }
     };
 
     return (
@@ -30,20 +53,20 @@ export const ContactPage: React.FC = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div className="space-y-2">
                                 <label className="text-xs font-black uppercase tracking-widest text-slate-500">Nom complet</label>
-                                <input required type="text" className="w-full bg-slate-50 border border-slate-200 p-4 rounded-2xl outline-none focus:ring-2 focus:ring-[#064e3b]" />
+                                <input required name="name" type="text" className="w-full bg-slate-50 border border-slate-200 p-4 rounded-2xl outline-none focus:ring-2 focus:ring-[#064e3b]" />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-xs font-black uppercase tracking-widest text-slate-500">Email</label>
-                                <input required type="email" className="w-full bg-slate-50 border border-slate-200 p-4 rounded-2xl outline-none focus:ring-2 focus:ring-[#064e3b]" />
+                                <input required name="email" type="email" className="w-full bg-slate-50 border border-slate-200 p-4 rounded-2xl outline-none focus:ring-2 focus:ring-[#064e3b]" />
                             </div>
                         </div>
                         <div className="space-y-2">
                             <label className="text-xs font-black uppercase tracking-widest text-slate-500">Sujet</label>
-                            <input required type="text" className="w-full bg-slate-50 border border-slate-200 p-4 rounded-2xl outline-none focus:ring-2 focus:ring-[#064e3b]" />
+                            <input required name="subject" type="text" className="w-full bg-slate-50 border border-slate-200 p-4 rounded-2xl outline-none focus:ring-2 focus:ring-[#064e3b]" />
                         </div>
                         <div className="space-y-2">
                             <label className="text-xs font-black uppercase tracking-widest text-slate-500">Message</label>
-                            <textarea required rows={5} className="w-full bg-slate-50 border border-slate-200 p-4 rounded-2xl outline-none focus:ring-2 focus:ring-[#064e3b]" />
+                            <textarea required name="message" rows={5} className="w-full bg-slate-50 border border-slate-200 p-4 rounded-2xl outline-none focus:ring-2 focus:ring-[#064e3b]" />
                         </div>
                         <button
                             disabled={loading}
