@@ -1,16 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import nodemailer from 'nodemailer';
 
-const transporter = nodemailer.createTransport({
-    host: 'smtp.zoho.com',
-    port: 465,
-    secure: true, // true for 465, false for other ports
-    auth: {
-        user: process.env.ZOHO_USER,
-        pass: process.env.ZOHO_PASSWORD,
-    },
-});
-
 export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (req.method !== 'POST') {
         return res.status(405).json({ error: 'Method not allowed' });
@@ -21,6 +11,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (!name || !email || !subject || !message) {
         return res.status(400).json({ error: 'Missing required fields' });
     }
+
+    // Create transporter inside handler to ensure env vars are available
+    const transporter = nodemailer.createTransport({
+        host: 'smtp.zoho.com',
+        port: 465,
+        secure: true,
+        auth: {
+            user: process.env.ZOHO_USER,
+            pass: process.env.ZOHO_PASSWORD,
+        },
+    });
 
     try {
         const mailOptions = {
